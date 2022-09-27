@@ -35,17 +35,34 @@
         // console.log(textLength);
         // let textSlice = text.slice(4,9)
         // console.log(textSlice)
-        let time = 25;
-        let greeting;
+//         let time = 25;
+//         let greeting;
 
-        if (time < 10) {
-  greeting = "Good morning";
-} else if (time < 20) {
-  greeting = "Good day";
-} else {
-  greeting = "Good evening";
+//         if (time < 10) {
+//   greeting = "Good morning";
+// } else if (time < 20) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+//         console.log(greeting)
+
+
+    // const myText  = "I am a string";
+    // const newString = myText.replace("string","sausage")
+    // console.log(newString)
+    function draw() {
+  ctx.clearRect(0,0,WIDTH,HEIGHT);
+  for (let i = 0; i < 100; i++) {
+    ctx.beginPath();
+    ctx.fillStyle = 'rgba(255,0,0,0.5)';
+    ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
+    ctx.fill();
+  }
 }
-        console.log(greeting)
+
+  draw(5,5);
+
     </script>
 </body>
 </html>
