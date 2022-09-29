@@ -1,68 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM manipulation</title>
 </head>
 <body>
-    <button>press me</button>
-    <script>
-        // let max = 57;
-        // let actual = max - 13;
-        // let percentage = actual/max
-        // console.log(percentage)
-        // let string = " this is an amazing feeling"
-        // console.log(string);
-        // const name = "moksh";
-        // const greeting = "hellow"+ name
-        // console.log(greeting);
-        // const name2 = `helllow, ${name}`; 
-        // console.log(name2)
+  <div class="container">
+      <h1 id="main-heading">Faviorite movie franchise</h1>
+      <ul>
+        <li class="list-items">The Matrix</li>
+        <li class="list-items">Star Wars</li>
+        <li class="list-items">Harry Potter</li>
+        <li class="list-items">Lord of the rings</li>
+        <li class="list-items">Marvel</li>
+      </ul>
+  </div>
 
-        // const button = document.querySelector('button');
+  
 
-        // function greet(){
-        //     const name = prompt("what is your name ?");
-        //     alert(`hellow, ${name}, nice to meet you!`)
-        // }
-
-        // button.addEventListener("click", greet)
-
-        // let text = "abcdefghijklmnopqrstuvwxyz";
-        // let textLength = text.length;
-        // console.log(textLength);
-        // let textSlice = text.slice(4,9)
-        // console.log(textSlice)
-//         let time = 25;
-//         let greeting;
-
-//         if (time < 10) {
-//   greeting = "Good morning";
-// } else if (time < 20) {
-//   greeting = "Good day";
-// } else {
-//   greeting = "Good evening";
-// }
-//         console.log(greeting)
-
-
-    // const myText  = "I am a string";
-    // const newString = myText.replace("string","sausage")
-    // console.log(newString)
-    function draw() {
-  ctx.clearRect(0,0,WIDTH,HEIGHT);
-  for (let i = 0; i < 100; i++) {
-    ctx.beginPath();
-    ctx.fillStyle = 'rgba(255,0,0,0.5)';
-    ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
-    ctx.fill();
-  }
-}
-
-  draw(5,5);
-
-    </script>
+  <script src="practice.js"></script>
 </body>
 </html>
