@@ -29,8 +29,20 @@
 
 //   parent node traversal
 
-let ul  = document.querySelector('ul');
+// let ul  = document.querySelector('ul');
 
 
-console.log(ul.parentNode);
-console.log(ul.parentElement);
+// console.log(ul.parentNode);
+// console.log(ul.parentElement);
+
+// const html = document.documentElement
+// console.log(html);
+
+// console.log(html.parentNode);
+// console.log(html.parentElement);
+
+// child node traversal
+
+let ul = document.querySelector('ul')
+
+console.log(ul.childNodes);
